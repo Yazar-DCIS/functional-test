@@ -1,0 +1,24 @@
+ 
+Modular Structure
+
+Step1:
+C:\Users\Yasser-QA\.gradle\caches 
+
+Create gradle.properties and add 
+mavenUser=
+mavenPassword=
+
+Step:2
+
+C:\DCIS\modular\qa-base\build\libs>start gradle.properties
+
+Step3:
+
+goto required directory and build
+
+step4:Any changes in qa-base build and copy the file 
+
+C:\DCIS\modular\qa-base\build\libs>copy qa-base-1.0.12-SNAPSHOT-tests.jar c:\Users\Yasser-QA\.gradle\caches\modules-2\files-2.1\com.formsdirectinc.qa\qa-base\1.0.12-SNAPSHOT\74c520f2a827bcc4867e87534320e8e62908cd35\
+
+
+
