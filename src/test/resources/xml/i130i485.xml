@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="i130_i485-test" parallel="tests" verbose="1" thread-count="5" preserve-order="true"> 
+	
+<!--  -->
+	<parameter name="product" value="I130I485" />
+	<test name="I130_I485" allow-return-values="true">
+	<parameter name="flowname" value="Flow1" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+</suite>

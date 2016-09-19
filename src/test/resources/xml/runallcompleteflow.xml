@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!-- XML for decidiNg the flow aNd scripts to be executed -->
+<!-- Author : Orina -->
+<!-- To ruN all products with all flows -->
+<suite name="allProducts-test-allFlows">
+ <suite-files>
+     <suite-file path="./n400.xml" />
+     <suite-file path="./n600.xml" />
+     <suite-file path="./i130.xml" />
+     <suite-file path="./i90.xml" />
+     <suite-file path="./i102.xml" />
+     <suite-file path="./i821d.xml" />
+     <suite-file path="./i130i485.xml" />
+     <suite-file path="./i485.xml" />
+     <suite-file path="./i485multi.xml" />
+     <suite-file path="./i134.xml" />
+     <suite-file path="./i131.xml" />
+     <suite-file path="./i539.xml" />
+     <suite-file path="./i751.xml" />
+     <suite-file path="./i765.xml" />
+     <suite-file path="./i821.xml" />
+     <suite-file path="./i824.xml" />
+     <suite-file path="./n565.xml" />
+     <suite-file path="./i129f.xml" />
+</suite-files>
+</suite>

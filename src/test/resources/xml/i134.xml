@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!-- XML for deciding the flow and scripts to be executed -->
+<!-- Author : Orina -->
+<suite name="i134-test" parallel="tests" verbose="1" thread-count="5" preserve-order="true">
+	
+	<!-- Product Specific Flow for I134  -->
+	<parameter name="product" value="I134" />
+	
+	<test name="I134" allow-return-values="true">
+	<parameter name="flowname" value="Flow1" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+	
+</suite>

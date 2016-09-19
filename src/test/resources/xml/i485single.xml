@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="i485-test" parallel="tests" verbose="1" thread-count="5" preserve-order="true">
+
+	<!-- Product Specific Flow for I485 Single -->
+	<!-- Note : If the test are executed for FR AND AIC, the product=I485Single else product=i485 -->
+		<!-- <parameter name="product" value="I485" /> -->
+		
+	<parameter name="product" value="I485SINGLE" />
+	<test name="I485Single" allow-return-values="true">
+	<parameter name="flowname" value="Flow1" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+	
+</suite>

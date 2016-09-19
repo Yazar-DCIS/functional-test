@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="n600-test" parallel="tests" verbose="1" thread-count="5" preserve-order="true">
+	<parameter name="product" value="N600" />
+	<!-- depending on FlowNumber EQ and SQ will get executed from Excel Values -->
+	<test name="n600_Scenario_user" allow-return-values="true">
+	<parameter name="flowname" value="user" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+	<test name="n600_Scenario1" allow-return-values="true">
+	<parameter name="flowname" value="bio_parents" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+	<test name="n600_Scenario2" allow-return-values="true">
+	<parameter name="flowname" value="adop_parents" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+	<test name="n600_Scenario3" allow-return-values="true">
+	<parameter name="flowname" value="national" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+	<test name="n600_Scenario4" allow-return-values="true">
+	<parameter name="flowname" value="National_1" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test> 
+
+	<test name="n600_Scenario5" allow-return-values="true">
+	<parameter name="flowname" value="biofather" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+	<test name="n600_Scenario6" allow-return-values="true">
+	<parameter name="flowname" value="biomother" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+	<test name="n600_Scenario7" allow-return-values="true">
+	<parameter name="flowname" value="adopfather" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+	<test name="n600_Scenario8" allow-return-values="true">
+	<parameter name="flowname" value="adopmother" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+	<test name="n600_Scenario10" allow-return-values="true">
+	<parameter name="flowname" value="Flow11" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+	<test name="n600_Scenario11" allow-return-values="true">
+	<parameter name="flowname" value="Flow12" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test> 
+	
+	<test name="n600_Scenario12" allow-return-values="true">
+	<parameter name="flowname" value="Flow13" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+	<test name="n600_Scenario13" allow-return-values="true">
+	<parameter name="flowname" value="Flow14" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+	<test name="n600_Scenario14" allow-return-values="true">
+	<parameter name="flowname" value="Flow15" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+	<test name="n600_Scenario15" allow-return-values="true">
+	<parameter name="flowname" value="Flow16" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+	<test name="n600_Scenario16" allow-return-values="true">
+	<parameter name="flowname" value="Flow17" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+	<test name="n600_Scenario17" allow-return-values="true">
+	<parameter name="flowname" value="Flow18" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+	<test name="n600_Scenario18" allow-return-values="true">
+	<parameter name="flowname" value="Flow19" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+	<test name="n600_Scenario19" allow-return-values="true">
+	<parameter name="flowname" value="Flow20" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+	<test name="n600_Scenario20" allow-return-values="true">
+	<parameter name="flowname" value="Flow21" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+</suite>

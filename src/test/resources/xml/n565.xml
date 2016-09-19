@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="n565-test" parallel="tests" verbose="1" thread-count="4" preserve-order="true">
+
+	<parameter name="product" value="N565" />
+
+	<test name="n565_Scenario1" allow-return-values="true">
+	<parameter name="flowname" value="Flow1" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+	<test name="n565_Scenario2" allow-return-values="true">
+	<parameter name="flowname" value="Flow2" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+	<test name="n565_Scenario3" allow-return-values="true">
+	<parameter name="flowname" value="Flow3" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+	<test name="n565_Scenario4" allow-return-values="true">
+	<parameter name="flowname" value="Flow4" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+	<test name="n565_Scenario5" allow-return-values="true">
+	<parameter name="flowname" value="Flow5" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+	<test name="n565_Scenario6" allow-return-values="true">
+	<parameter name="flowname" value="Flow6" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+	<test name="n565_Scenario7" allow-return-values="true">
+	<parameter name="flowname" value="Flow7" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+	<test name="n565_Scenario8" allow-return-values="true">
+	<parameter name="flowname" value="Flow8" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+</suite>

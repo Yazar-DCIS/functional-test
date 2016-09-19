@@ -1,0 +1,29 @@
+package com.formsdirectinc.functionaltests.apps.i765.pages;
+
+import java.io.IOException;
+
+import org.openqa.selenium.WebDriver;
+
+import com.formsdirectinc.functionaltests.tags.CaptureScreen;
+import com.formsdirectinc.functionaltests.tags.WizardPage;
+/**
+ * Page model for SQ3_5_1 Details
+ * @author:Orina<br> Revision: $Rev$
+ */
+public class SQ3_5_1 extends WizardPage {
+
+	public SQ3_5_1(WebDriver driver) {
+		super(driver);
+
+	}
+
+	public SQ3_5_1 stopApplication() throws IOException {
+
+			CaptureScreen takeSnap=new CaptureScreen(driver);
+			takeSnap.takeScreenShot("I765","SQ3_5_1");
+			
+		return this;
+
+	}
+
+}

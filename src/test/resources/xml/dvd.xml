@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="specificProduct-test" parallel="tests" verbose="1"	thread-count="6">
+
+<test name="dvd" allow-return-values="true">
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine">
+				<methods>
+					 <parameter name="flowname" value="Flow1" />
+					 <parameter name="product" value="dvd" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
+

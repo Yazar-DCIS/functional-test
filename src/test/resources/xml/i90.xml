@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="i90-test" parallel="tests" verbose="1" thread-count="5" preserve-order="true">
+	
+	<parameter name="product" value="I90" />
+	
+	<test name="i90_Scenario1" allow-return-values="true">
+	<parameter name="flowname" value="Flow1" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+
+	<test name="i90_Scenario2" allow-return-values="true">
+	<parameter name="flowname" value="Flow2" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+
+	<test name="i90_Scenario3" allow-return-values="true">
+	<parameter name="flowname" value="Flow3" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+
+	<test name="i90_Scenario4" allow-return-values="true">
+	<parameter name="flowname" value="Flow4" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+
+	<test name="i90_Scenario5" allow-return-values="true">
+	<parameter name="flowname" value="Flow5" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+
+	<test name="i90_Scenario6" allow-return-values="true">
+	<parameter name="flowname" value="Flow6" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+
+	<test name="i90_Scenario7" allow-return-values="true">
+	<parameter name="flowname" value="Flow7" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+
+	<test name="i90_Scenario8" allow-return-values="true">
+	<parameter name="flowname" value="Flow8" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+
+	<test name="i90_Scenario9" allow-return-values="true">
+	<parameter name="flowname" value="Flow9" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+
+	<test name="i90_Scenario10" allow-return-values="true">
+	<parameter name="flowname" value="Flow10" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+
+	<test name="i90_Scenario11" allow-return-values="true">
+	<parameter name="flowname" value="Flow11" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+
+	<test name="i90_Scenario12" allow-return-values="true">
+	<parameter name="flowname" value="Flow12" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+
+	<test name="i90_Scenario13" allow-return-values="true">
+	<parameter name="flowname" value="Flow13" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+
+	<test name="i90_Scenario14" allow-return-values="true">
+	<parameter name="flowname" value="Flow14" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+
+	<test name="i90_Scenario15" allow-return-values="true">
+	<parameter name="flowname" value="Flow15" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+
+	<test name="i90_Scenario16" allow-return-values="true">
+	<parameter name="flowname" value="Flow16" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+
+	<test name="i90_Scenario17" allow-return-values="true">
+	<parameter name="flowname" value="Flow17" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+
+	<test name="i90_Scenario18" allow-return-values="true">
+	<parameter name="flowname" value="Flow18" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+
+	<test name="i90_Scenario19" allow-return-values="true">
+	<parameter name="flowname" value="Flow19" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+
+	<test name="i90_Scenario20" allow-return-values="true">
+	<parameter name="flowname" value="Flow20" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+	
+
+</suite>
+
+
+
+  

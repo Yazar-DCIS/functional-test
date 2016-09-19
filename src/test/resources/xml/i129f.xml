@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="I129F-test" verbose="1" parallel="tests" thread-count="3"	preserve-order="true">
+
+	<!-- depending on FlowNumber EQ-SQ will get executed from Excel Values -->
+	<parameter name="product" value="I129F" />
+	<test name="I129f_Scenario1" allow-return-values="true">
+	<parameter name="flowname" value="Flow1" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+	<test name="I129f_Scenario2" allow-return-values="true">
+	<parameter name="flowname" value="Flow2" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+	<test name="I129f_Scenario3" allow-return-values="true">
+	<parameter name="flowname" value="Flow3" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+
+	<test name="I129f_Scenario4" allow-return-values="true">
+	<parameter name="flowname" value="InEligibleFlow4" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+	<test name="I129f_Scenario5" allow-return-values="true">
+	<parameter name="flowname" value="Flow5" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+	<test name="I129f_Scenario6" allow-return-values="true">
+	<parameter name="flowname" value="InEligibleFlow6" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+	
+</suite>

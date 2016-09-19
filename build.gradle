@@ -1,0 +1,103 @@
+apply plugin: 'java'
+description ="Automation Testing for core-site products"
+sourceSets {
+    test {
+        java {
+            srcDir 'functional-test-scripts-coresite/src/test/java/'
+        }
+        resources {
+            srcDir 'functional-test-scripts-coresite/src/test/resources'
+        }
+    }
+}
+repositories 
+{
+		mavenCentral()
+		jcenter()
+		maven 
+		{
+			url "http://download.java.net/maven/2"
+			url "http://nexus.sonatype.org/oss-repository-hosting.html/ashot"
+		}
+}
+dependencies {
+		compile group: 'org.seleniumhq.selenium', name: 'selenium-firefox-driver', version: '2.45.0'
+		compile group: 'org.seleniumhq.selenium', name: 'selenium-api', version: '2.45.0'
+		compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '2.45.0'
+		compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.3.2'
+		compile group: 'org.apache.poi', name:'poi', version:'3.11'
+		compile group: 'com.google.inject', name:'guice', version:'3.0'
+		compile 'log4j:log4j:1.2.17'
+		compile 'com.itextpdf:itextpdf:5.1.0'
+		compile 'ru.yandex.qatools.ashot:ashot:1.5.2'
+		compile 'junit:junit:4.+'
+		compile 'org.apache.pdfbox:pdfbox:2.0.0'
+		compile 'org.apache.pdfbox:pdfbox-tools:2.0.0-RC1'
+		compile 'com.google.zxing:core:3.2.1'
+		compile 'com.google.zxing:javase:3.2.1'
+
+
+		compile("org.uncommons:reportng:1.1.1") {
+			exclude group: "org.testng", module: "testng"
+		}
+		compile group: 'javax.mail', name:'mail',version:'1.4.2'
+		compile 'com.sun.mail:gimap:1.5.1'
+		testCompile 'org.testng:testng:6.9.10'
+}
+		
+/**
+ * @author Orina
+ * @gradle build that Decides on which Class has to be executed with their respective 
+ *	EligibilitySimpleQuestions/Registration/Payment/SimpleQuestions(ie -Decides on Product and its respective flow)
+ */
+
+test{
+	systemProperties = System.getProperties()
+	systemProperties['jna.nosys'] = true
+	systemProperties['jna.boot.library.path'] = null
+	
+	useTestNG() 
+		{
+			if(System.getProperty('flowname')!=null&&System.getProperty('product')!=null)
+			{
+				filter 
+				{
+					includeTestsMatching "com.formsdirectinc.functionaltests.apps.TestEngine"
+				}
+			}
+			
+			else if(System.getProperty('test')=='Registration' || System.getProperty('test')=='Payment' || System.getProperty('test')=='Registration,Payment'  &&System.getProperty('flowname')==null &&System.getProperty('product')!=null )
+			{
+				options.suites("src/test/resources/xml/acquisition.xml")
+			}
+			
+			else if(System.getProperty('test')=='DiscountPayment'&&System.getProperty('flowname')==null &&System.getProperty('product')!=null )
+			{
+				options.suites("src/test/resources/xml/acquisition.xml")
+			}
+
+
+
+
+			else if(System.getProperty('flowname')==null&&System.getProperty('product')!=null)
+			{
+				options.suites("src/test/resources/xml/${System.getProperty('product')}.xml")
+			}
+			
+			else if(System.getProperty('flowname')==null&&System.getProperty('product')==null)
+			{
+				options.suites("src/test/resources/xml/runallwithsingleflow.xml")
+			}
+				
+			// To generate the TestNG customized reports,instead of default html-report 
+			useDefaultListeners=true
+			reports.html.enabled = false
+			options.listeners << 'org.uncommons.reportng.HTMLReporter'
+			options.listeners << 'org.uncommons.reportng.JUnitXMLReporter'
+		}
+		
+	}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.14'
+}

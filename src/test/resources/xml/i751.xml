@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="i751-test" parallel="tests" verbose="1" thread-count="5" preserve-order="true">
+	<!-- Flow for I751-->
+	<parameter name="product" value="I751" />
+	
+	<test name="I751" allow-return-values="true">
+	<parameter name="flowname" value="Flow1" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+	
+</suite>

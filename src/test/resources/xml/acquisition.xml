@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Acquisition test across" parallel="tests"	verbose="1" thread-count="5" preserve-order="true">
+
+
+	<parameter name="product" value="${product}" />
+	
+	<test name="Acquisition Scenario">
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine">
+				<parameter name="flowname" value="Flow1" />
+			</class>
+		</classes>
+	</test>
+	
+	
+</suite>

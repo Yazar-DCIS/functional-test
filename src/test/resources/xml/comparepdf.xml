@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="pdfCompare">
+	<test name="pdfCompareTest" allow-return-values="true">
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.utils.PDFComparison">
+			<methods>
+			<parameter name="product" value="i90" />
+			<parameter name="flowname" value="Flow1" />
+			<parameter name="pdfFileName" value="Filing_Instructions_Green_Card_Renewal_or_Replacement_Application" />
+			<parameter name="fileType" value="expected" />
+			</methods>
+			</class>
+		</classes>
+	</test> 
+</suite>

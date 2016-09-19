@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="daca-test" verbose="1" parallel="tests" thread-count="5" preserve-order="true">
+
+	<parameter name="product" value="I821D" />
+	<test name="daca_Scenario1" allow-return-values="true">
+	<parameter name="flowname" value="Flow1" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+
+	<test name="daca_Scenario2" allow-return-values="true">
+	<parameter name="flowname" value="Flow2" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+
+	<test name="daca_Scenario3" allow-return-values="true">
+	<parameter name="flowname" value="Flow3" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+
+	<test name="daca_Scenario4" allow-return-values="true">
+	<parameter name="flowname" value="Flow4" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+
+	<test name="daca_Scenario5" allow-return-values="true">
+	<parameter name="flowname" value="Flow5" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+
+	<test name="daca_Scenario7" allow-return-values="true">
+	<parameter name="flowname" value="Flow7" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+
+	<test name="daca_Scenario8" allow-return-values="true">
+	<parameter name="flowname" value="Flow8" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+
+	<test name="daca_Scenario9" allow-return-values="true">
+	<parameter name="flowname" value="Flow9" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+
+	<test name="daca_Scenario10" allow-return-values="true">
+	<parameter name="flowname" value="Flow10" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+
+
+	<test name="daca_Scenario11" allow-return-values="true">
+	<parameter name="flowname" value="Flow11" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+
+	<test name="daca_Scenario12" allow-return-values="true">
+	<parameter name="flowname" value="Flow12" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+
+	<test name="daca_Scenario13" allow-return-values="true">
+	<parameter name="flowname" value="Flow13" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+
+	<test name="daca_Scenario14" allow-return-values="true">
+	<parameter name="flowname" value="Flow14" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+
+	<test name="daca_Scenario15" allow-return-values="true">
+	<parameter name="flowname" value="Flow15" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+
+
+	<test name="daca_Scenario16" allow-return-values="true">
+	<parameter name="flowname" value="Flow16" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+
+	<test name="daca_Scenario17" allow-return-values="true">
+	<parameter name="flowname" value="Flow17" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+
+	<test name="daca_Scenario18" allow-return-values="true">
+	<parameter name="flowname" value="Flow18" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+
+	<test name="daca_Scenario19" allow-return-values="true">
+	<parameter name="flowname" value="Flow19" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+
+	<test name="daca_Scenario20" allow-return-values="true">
+	<parameter name="flowname" value="Flow20" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+
+
+	<test name="daca_Scenario21" allow-return-values="true">
+	<parameter name="flowname" value="Flow21" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+
+	<test name="daca_Scenario22" allow-return-values="true">
+	<parameter name="flowname" value="Flow22" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+
+	<test name="daca_Scenario23" allow-return-values="true">
+	<parameter name="flowname" value="Flow23" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+
+	<test name="daca_Scenario24" allow-return-values="true">
+	<parameter name="flowname" value="Flow24" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+
+	<test name="daca_Scenario25" allow-return-values="true">
+	<parameter name="flowname" value="Flow25" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+
+
+	<test name="daca_Scenario26" allow-return-values="true">
+	<parameter name="flowname" value="Flow26" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+
+	<test name="daca_Scenario27" allow-return-values="true">
+	<parameter name="flowname" value="Flow27" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+
+	<test name="daca_Scenario28" allow-return-values="true">
+	<parameter name="flowname" value="Flow28" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+
+	<test name="daca_Scenario29" allow-return-values="true">
+	<parameter name="flowname" value="Flow29" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+
+	<test name="daca_Scenario30" allow-return-values="true">
+	<parameter name="flowname" value="Flow30" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+
+
+	<test name="daca_Scenario31" allow-return-values="true">
+	<parameter name="flowname" value="Flow31" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+
+	<test name="daca_Scenario32" allow-return-values="true">
+	<parameter name="flowname" value="Flow32" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+
+	<test name="daca_Scenario33" allow-return-values="true">
+	<parameter name="flowname" value="Flow33" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+
+	<test name="daca_Scenario34" allow-return-values="true">
+	<parameter name="flowname" value="Flow34" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+</suite>

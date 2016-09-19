@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="i821-test" parallel="tests" verbose="1" thread-count="6" preserve-order="true">
+
+	<parameter name="product" value="I821" />
+
+	<test name="i821_Scenario1" allow-return-values="true">
+	<parameter name="flowname" value="Flow1" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+	<test name="i821_Scenario2" allow-return-values="true">
+	<parameter name="flowname" value="Flow2" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+	<test name="i821_Scenario3" allow-return-values="true">
+	<parameter name="flowname" value="Flow3" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+	<test name="i821_Scenario4" allow-return-values="true">
+	<parameter name="flowname" value="Flow4" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+	<test name="i821_Scenario5" allow-return-values="true">
+	<parameter name="flowname" value="Flow5" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+	<test name="i821_Scenario6" allow-return-values="true">
+	<parameter name="flowname" value="Flow6" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+	<test name="i821_Scenario7" allow-return-values="true">
+	<parameter name="flowname" value="Flow7" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+	<test name="i821_Scenario8" allow-return-values="true">
+	<parameter name="flowname" value="Flow8" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+	<test name="i821_Scenario9" allow-return-values="true">
+	<parameter name="flowname" value="Flow9" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+	<test name="i821_Scenario10" allow-return-values="true">
+	<parameter name="flowname" value="Flow10" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+	<test name="i821_Scenario11" allow-return-values="true">
+	<parameter name="flowname" value="Flow11" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+	<test name="i821_Scenario12" allow-return-values="true">
+	<parameter name="flowname" value="Flow12" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+	<test name="i821_Scenario13" allow-return-values="true">
+	<parameter name="flowname" value="Flow13" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+	<test name="i821_Scenario14" allow-return-values="true">
+	<parameter name="flowname" value="Flow14" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+	<test name="i821_Scenario15" allow-return-values="true">
+	<parameter name="flowname" value="Flow15" />
+		<classes>
+			<class name="com.formsdirectinc.functionaltests.apps.TestEngine"></class>
+		</classes>
+	</test>
+
+</suite>
