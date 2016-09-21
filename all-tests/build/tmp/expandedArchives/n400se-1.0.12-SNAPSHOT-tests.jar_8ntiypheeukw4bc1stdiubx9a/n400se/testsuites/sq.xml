@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="n400-test" parallel="tests" verbose="1" thread-count="4" preserve-order="true">
+	
+	
+	<parameter name="product" value="N400SE" />
+	
+	<parameter name="username" value="orina.moorthy@dcis.net" />
+	<parameter name="password" value="123456" />
+	<parameter name="sitename" value="AIC"/>
+	<parameter name="siteurl" value="https://www.us-immigration.com" />
+	
+	<test name="n400_Scenario1" allow-return-values="true">
+	<parameter name="applicationID" value="722882" />
+	<parameter name="flowname" value="Flow1" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.n400se.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+
+	<!--IN-EligibleFlows -->
+	<!-- <test name="N400-InEligible-USER-1" allow-return-values="true">
+		
+		<parameter name="flowname" value="InEligible-6.1.1" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.n400se.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+
+	<test name="N400-InEligible-USER-2" allow-return-values="true">
+		
+		<parameter name="flowname" value="InEligible-6.1.2" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.n400se.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+
+	<test name="N400-InEligible-USER-3" allow-return-values="true">
+		
+		<parameter name="flowname" value="InEligible-6.1.3" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.n400se.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+
+	<test name="N400-InEligible-USER-4" allow-return-values="true">
+		
+		<parameter name="flowname" value="InEligible-Priority6.1.1" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.n400se.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+
+	<test name="N400-InEligible-USER-5" allow-return-values="true">
+		
+		<parameter name="flowname" value="InEligible-6.2.1" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.n400se.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+
+	<test name="N400-InEligible-USER-6" allow-return-values="true">
+		
+		<parameter name="flowname" value="InEligible-6.2.2" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.n400se.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+
+	<test name="N400-InEligible-USER-7" allow-return-values="true">
+		
+		<parameter name="flowname" value="InEligible-Priority6.2.1" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.n400se.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+
+	<test name="N400-InEligible-USER-8" allow-return-values="true">
+		
+		<parameter name="flowname" value="InEligible-6.3.1" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.n400se.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+
+	<test name="N400-InEligible-USER-9" allow-return-values="true">
+		
+		<parameter name="flowname" value="InEligible-6.3.2" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.n400se.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+
+	<test name="N400-InEligible-USER-10" allow-return-values="true">
+		
+		<parameter name="flowname" value="InEligible-6.3.3" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.n400se.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+
+	<test name="N400-InEligible-USER-11" allow-return-values="true">
+		
+		<parameter name="flowname" value="InEligible-6.3.4" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.n400se.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+
+	<test name="N400-InEligible-USER-12" allow-return-values="true">
+		
+		<parameter name="flowname" value="InEligible-6.3.5" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.n400se.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+
+	<test name="N400-InEligible-USER-13" allow-return-values="true">
+		
+		<parameter name="flowname" value="InEligible-6.3.6" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.n400se.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+
+	<test name="N400-InEligible-USER-14" allow-return-values="true">
+		
+		<parameter name="flowname" value="InEligible-6.3.7" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.n400se.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+
+	<test name="N400-InEligible-USER-15" allow-return-values="true">
+		
+		<parameter name="flowname" value="InEligible-6.3.8" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.n400se.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+
+	<test name="N400-InEligible-USER-16" allow-return-values="true">
+		
+		<parameter name="flowname" value="InEligible-6.3.8.1" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.n400se.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+
+	<test name="N400-InEligible-USER-17" allow-return-values="true">
+		
+		<parameter name="flowname" value="InEligible-6.3.9" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.n400se.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+
+	<test name="N400-InEligible-USER-18" allow-return-values="true">
+		
+		<parameter name="flowname" value="InEligible-Priority6.3.1" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.n400se.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+
+	<test name="N400-InEligible-USER-19" allow-return-values="true">
+		
+		<parameter name="flowname" value="InEligible-6.5.1" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.n400se.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+
+	<test name="N400-InEligible-USER-20" allow-return-values="true">
+		
+		<parameter name="flowname" value="InEligible-6.5.2" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.n400se.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+
+	<test name="N400-InEligible-USER-21" allow-return-values="true">
+		
+		<parameter name="flowname" value="InEligible-Priority6.5.1" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.n400se.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+
+	<test name="N400-InEligible-USER-22" allow-return-values="true">
+		
+		<parameter name="flowname" value="InEligible-6.6.2" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.n400se.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+
+	<test name="N400-InEligible-USER-23" allow-return-values="true">
+		
+		<parameter name="flowname" value="InEligible-6.6.2.1" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.n400se.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+
+	<test name="N400-InEligible-USER-24" allow-return-values="true">
+		
+		<parameter name="flowname" value="InEligible-6.6.3" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.n400se.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+
+	<test name="N400-InEligible-USER-25" allow-return-values="true">
+		
+		<parameter name="flowname" value="InEligible-6.6.4.Years" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.n400se.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+
+	<test name="N400-InEligible-USER-26" allow-return-values="true">
+		
+		<parameter name="flowname" value="InEligible-6.6.4.Month" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.n400se.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+
+	<test name="N400-InEligible-USER-27" allow-return-values="true">
+		
+		<parameter name="flowname" value="InEligible-6.6.4.Day" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.n400se.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+
+	<test name="N400-InEligible-USER-28" allow-return-values="true">
+		
+		<parameter name="flowname" value="InEligible-Priority6.6.2" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.n400se.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+
+	<test name="N400-InEligible-USER-29" allow-return-values="true">
+		
+		<parameter name="flowname" value="InEligible-6.7.1" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.n400se.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+
+	<test name="N400-InEligible-USER-30" allow-return-values="true">
+		
+		<parameter name="flowname" value="InEligible-6.7.2" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.n400se.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+
+	<test name="N400-InEligible-USER-31" allow-return-values="true">
+		
+		<parameter name="flowname" value="InEligible-6.7.3" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.n400se.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+
+	<test name="N400-InEligible-USER-32" allow-return-values="true">
+		
+		<parameter name="flowname" value="InEligible-6.7.4" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.n400se.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+
+	<test name="N400-InEligible-USER-33" allow-return-values="true">
+		
+		<parameter name="flowname" value="InEligible-6.7.5" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.n400se.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+
+	<test name="N400-InEligible-USER-34" allow-return-values="true">
+		
+		<parameter name="flowname" value="InEligible-6.7.6" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.n400se.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+
+	<test name="N400-InEligible-USER-35" allow-return-values="true">
+		
+		<parameter name="flowname" value="InEligible-6.7.7" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.n400se.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+
+	<test name="N400-InEligible-USER-36" allow-return-values="true">
+		
+		<parameter name="flowname" value="InEligible-6.7.8" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.n400se.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+
+	<test name="N400-InEligible-USER-37" allow-return-values="true">
+		
+		<parameter name="flowname" value="InEligible-6.7.8.1" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.n400se.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+
+	<test name="N400-InEligible-USER-38" allow-return-values="true">
+		
+		<parameter name="flowname" value="InEligible-6.7.9" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.n400se.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+
+	<test name="N400-InEligible-USER-39" allow-return-values="true">
+		
+		<parameter name="flowname" value="InEligible-6.7.10" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.n400se.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+
+	<test name="N400-InEligible-USER-40" allow-return-values="true">
+		
+		<parameter name="flowname" value="InEligible-Priority6.7.1" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.n400se.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+
+	<test name="N400-InEligible-USER-41" allow-return-values="true">
+		
+		<parameter name="flowname" value="InEligible-6.8.1" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.n400se.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+
+	<test name="N400-InEligible-USER-42" allow-return-values="true">
+		
+		<parameter name="flowname" value="InEligible-6.8.2" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.n400se.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+
+	<test name="N400-InEligible-USER-43" allow-return-values="true">
+		
+		<parameter name="flowname" value="InEligible-6.8.3" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.n400se.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+
+	<test name="N400-InEligible-USER-44" allow-return-values="true">
+		
+		<parameter name="flowname" value="InEligible-Priority6.8.1" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.n400se.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+
+	<test name="N400-InEligible-USER-45" allow-return-values="true">
+		
+		<parameter name="flowname" value="InEligible-6.9.4" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.n400se.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+
+	<test name="N400-InEligible-USER-46" allow-return-values="true">
+		
+		<parameter name="flowname" value="InEligible-6.9.3" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.n400se.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+
+	<test name="N400-InEligible-USER-47" allow-return-values="true">
+		
+		<parameter name="flowname" value="InEligible-Priority6.9.4" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.n400se.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+
+	<test name="N400-InEligible-USER-48" allow-return-values="true">
+		
+		<parameter name="flowname" value="InEligible-6.9.5" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.n400se.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+
+	<test name="N400-InEligible-USER-49" allow-return-values="true">
+		
+		<parameter name="flowname" value="InEligible-6.9.6" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.n400se.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+
+	<test name="N400-InEligible-USER-50" allow-return-values="true">
+		
+		<parameter name="flowname" value="InEligible-6.9.7" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.n400se.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+
+	<test name="N400-InEligible-USER-51" allow-return-values="true">
+	
+		<parameter name="flowname" value="InEligible-6.9.8" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.n400se.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+
+	<test name="N400-InEligible-USER-52" allow-return-values="true">
+		
+		<parameter name="flowname" value="InEligible-Priority6.9.5" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.n400se.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+
+	<test name="N400-InEligible-USER-53" allow-return-values="true">
+		
+		<parameter name="flowname" value="InEligible-6.9.9" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.n400se.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+
+	<test name="N400-InEligible-USER-54" allow-return-values="true">
+		
+		<parameter name="flowname" value="InEligible-6.9.10" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.n400se.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+
+	<test name="N400-InEligible-USER-55" allow-return-values="true">
+		
+		<parameter name="flowname" value="InEligible-Priority6.9.9" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.n400se.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+
+	<test name="N400-InEligible-USER-56" allow-return-values="true">
+		
+		<parameter name="flowname" value="InEligible-6.10.1" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.n400se.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+
+	<test name="N400-InEligible-USER-57" allow-return-values="true">
+		
+		<parameter name="flowname" value="InEligible-6.10.2" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.n400se.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+
+	<test name="N400-InEligible-USER-58" allow-return-values="true">
+		
+		<parameter name="flowname" value="InEligible-6.10.3" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.n400se.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+
+	<test name="N400-InEligible-USER-59" allow-return-values="true">
+		
+		<parameter name="flowname" value="InEligible-6.10.4" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.n400se.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+
+	<test name="N400-InEligible-USER-60" allow-return-values="true">
+		
+		<parameter name="flowname" value="InEligible-6.10.5" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.n400se.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+
+	<test name="N400-InEligible-USER-61" allow-return-values="true">
+		
+		<parameter name="flowname" value="InEligible-6.10.6" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.n400se.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+
+	<test name="N400-InEligible-USER-62" allow-return-values="true">
+		
+		<parameter name="flowname" value="InEligible-6.10.7" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.n400se.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+
+	<test name="N400-InEligible-USER-63" allow-return-values="true">
+		
+		<parameter name="flowname" value="InEligible-Priority6.10.1" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.n400se.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+
+	<test name="N400-InEligible-USER-64" allow-return-values="true">
+		
+		<parameter name="flowname" value="InEligible-7.2.1" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.n400se.SimpleQuestionsTest"></class>
+		</classes>
+	</test> -->
+
+</suite>

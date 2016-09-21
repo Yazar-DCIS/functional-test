@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.formsdirectinc.qa.app.registration.RegistrationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2016-09-20T06:57:28" hostname="otywin-17" time="25.752">
+  <properties/>
+  <testcase name="registrationtest[0](AIC, https://www.us-immigration.com, i90, , 123456, Test)" classname="com.formsdirectinc.qa.app.registration.RegistrationTest" time="25.752"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="allProducts-test-singleFlow-SQ" parallel="tests"	verbose="1" thread-count="5" preserve-order="true">
+
+	<parameter name="sitename" value="DUS"/>
+	<parameter name="siteurl" value="https://www.usimmigration.us/" />
+	<parameter name="username" value="" />
+	<parameter name="password" value="123456" />
+	<parameter name="applicationID" value="" /> 
+	
+	<test name="I102" allow-return-values="true">
+		<parameter name="product" value="I102" />
+		<parameter name="flowname" value="Flow1" />
+		<classes>
+			<class name="com.formsdirectinc.qa.EndToEndTest"></class>
+		</classes>
+	</test>
+
+	<test name="I129f" allow-return-values="true">
+		<parameter name="product" value="I129F" />
+		<parameter name="flowname" value="Flow1" />
+		<classes>
+			<class name="com.formsdirectinc.qa.EndToEndTest"></class>
+		</classes>
+	</test>
+
+
+	<test name="I130" allow-return-values="true">
+		<parameter name="product" value="I130" />
+		<parameter name="flowname" value="Flow1" />
+		<classes>
+			<class name="com.formsdirectinc.qa.EndToEndTest"></class>
+		</classes>
+	</test>
+
+	<test name="I130_I485" allow-return-values="true">
+		<parameter name="product" value="I130I485" />
+		<parameter name="flowname" value="Flow1" />
+		<classes>
+			<class name="com.formsdirectinc.qa.EndToEndTest"></class>
+		</classes>
+	</test>
+
+	<test name="I131" allow-return-values="true">
+		<parameter name="product" value="I131" />
+		<parameter name="flowname" value="Flow1" />
+		<classes>
+			<class name="com.formsdirectinc.qa.EndToEndTest"></class>
+		</classes>
+	</test>
+
+	<test name="I134" allow-return-values="true">
+		<parameter name="product" value="I134" />
+		<parameter name="flowname" value="Flow1" />
+		<classes>
+			<class name="com.formsdirectinc.qa.EndToEndTest"></class>
+		</classes>
+	</test>
+
+	<test name="I485Single" allow-return-values="true">
+	<parameter name="product" value="I485" />
+	<parameter name="flowname" value="SingleFlow" />
+		<classes>
+			<class name="com.formsdirectinc.qa.EndToEndTest"></class>
+		</classes>
+	</test>
+
+	<test name="I485_Multi" allow-return-values="true">
+		<parameter name="product" value="I485" />
+		<parameter name="flowname" value="MultiFlow" />
+		<classes>
+			<class name="com.formsdirectinc.qa.EndToEndTest"></class>
+		</classes>
+	</test>
+
+	<test name="I539">
+		<parameter name="product" value="I539" />
+		<parameter name="flowname" value="Flow1" />
+		<classes>
+			<class name="com.formsdirectinc.qa.EndToEndTest"></class>
+		</classes>
+	</test>
+
+	<test name="I751" allow-return-values="true">
+		<parameter name="product" value="I751" />
+		<parameter name="flowname" value="Flow1" />
+		<classes>
+			<class name="com.formsdirectinc.qa.EndToEndTest"></class>
+		</classes>
+	</test>
+
+	<test name="I765" allow-return-values="true">
+		<parameter name="product" value="I765" />
+		<parameter name="flowname" value="Flow1" />
+		<classes>
+			<class name="com.formsdirectinc.qa.EndToEndTest"></class>
+		</classes>
+	</test>
+
+	<test name="I821" allow-return-values="true">
+		<parameter name="product" value="I821" />
+		<parameter name="flowname" value="Flow1" />
+		<classes>
+			<class name="com.formsdirectinc.qa.EndToEndTest"></class>
+		</classes>
+	</test>
+
+	<test name="I821D" allow-return-values="true">
+		<parameter name="product" value="I821D" />
+		<parameter name="flowname" value="Flow1" />
+		<classes>
+			<class name="com.formsdirectinc.qa.EndToEndTest"></class>
+		</classes>
+	</test>
+	
+	<test name="I824" allow-return-values="true">
+		<parameter name="product" value="I824" />
+		<parameter name="flowname" value="Flow1" />
+		<classes>
+			<class name="com.formsdirectinc.qa.EndToEndTest"></class>
+		</classes>
+	</test>
+
+	<test name="I90" allow-return-values="true">
+		<parameter name="product" value="I90" />
+		<parameter name="flowname" value="Flow1" />
+		<classes>
+			<class name="com.formsdirectinc.qa.EndToEndTest"></class>
+		</classes>
+	</test>
+
+	<test name="N400" allow-return-values="true">
+		<parameter name="product" value="N400" />
+		<parameter name="flowname" value="Flow1" />
+		<classes>
+			<class name="com.formsdirectinc.qa.EndToEndTest"></class>
+		</classes>
+	</test>
+
+	<test name="N565" allow-return-values="true">
+		<parameter name="product" value="N565" />
+		<parameter name="flowname" value="Flow1" />
+		<classes>
+			<class name="com.formsdirectinc.qa.EndToEndTest"></class>
+		</classes>
+	</test>
+
+	<test name="N600" allow-return-values="true">
+		<parameter name="product" value="N600" />
+		<parameter name="flowname" value="Flow1" />
+		<classes>
+			<class name="com.formsdirectinc.qa.EndToEndTest"></class>
+		</classes>
+	</test> 
+
+
+</suite>

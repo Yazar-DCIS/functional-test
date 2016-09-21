@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
+<head>
+  <title>Test Results Report - i90</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="reportng.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="reportng.js"></script>
+</head>
+<body>
+<h1>i90</h1>
+<p>
+  Test duration: 62.779s
+</p>
+
+  <table class="resultsTable configTable">
+    <tr><th colspan="3" class="header failedConfig">Failed Configuration</th></tr>
+              <tr class="group">
+        <td colspan="3">com.formsdirectinc.qa.EndToEndTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+          endTest
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"i90", "Flow2"</span><br />
+    
+        
+
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.remote.SessionNotFoundException: The FirefoxDriver cannot be used after quit() was called.<br/>
+Build info: version: &apos;2.47.2&apos;, revision: &apos;4d972c01cab1304452627f837654326a11eb92fe&apos;, time: &apos;2015-09-24 09:17:17&apos;<br/>
+System info: host: &apos;otywin-17&apos;, ip: &apos;10.0.102.178&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_25&apos;<br/>
+Driver info: driver.version: FirefoxDriver</b></a><br />
+    <div class="stackTrace" id="exception-0">
+              org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:390)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:568)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)<br />
+              org.openqa.selenium.firefox.FirefoxDriver.getScreenshotAs(FirefoxDriver.java:354)<br />
+              com.formsdirectinc.qa.utils.CaptureScreen.takeScreenShot(CaptureScreen.java:61)<br />
+              com.formsdirectinc.qa.TestBase.endTest(TestBase.java:66)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:483)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)<br />
+              org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)<br />
+              org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)<br />
+              org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)<br />
+              org.testng.TestRunner.afterRun(TestRunner.java:1012)<br />
+              org.testng.TestRunner.run(TestRunner.java:636)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:366)<br />
+              org.testng.SuiteRunner.access$000(SuiteRunner.java:39)<br />
+              org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)<br />
+              org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)<br />
+              java.util.concurrent.FutureTask.run(FutureTask.java:266)<br />
+              java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)<br />
+              java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)<br />
+              java.lang.Thread.run(Thread.java:745)<br />
+                </div>
+      </td>
+</tr>
+    
+      </table>
+
+
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">com.formsdirectinc.qa.EndToEndTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+          start
+      </td>
+  <td class="duration">
+    57.161s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"DUS", "https://stage.usimmigration.us/", "i90", "Flow2", "test-20-09.2@dcis.net", "123456", ""</span><br />
+    
+            <div class="testOutput">
+                        &lt;br&gt;EMail ID&lt;br&gt;&lt;font color=&quot;green&quot;&gt;test-20-09.2@dcis.net&lt;/font&gt;<br />
+                                &lt;br&gt;&lt;b&gt;Executing the test for RegistrationTest for the product i90 and flow name as Flow2 in the site USC&lt;br&gt;&lt;b&gt;<br />
+                                &lt;br&gt;&lt;b&gt;Executing the test for PaymentTest for the product i90 and flow name as Flow2 in the site USC&lt;br&gt;&lt;b&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+      </table>
+  
+</body>
+</html>

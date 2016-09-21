@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="i824-test" parallel="tests" verbose="1" thread-count="5" preserve-order="true">
+	
+	<parameter name="sitename" value="AIC"/>
+	<parameter name="siteurl" value="https://www.us-immigration.com" />
+	
+	<parameter name="product" value="I824" />
+	<parameter name="username" value="orina.moorthy@dcis.net" />
+	<parameter name="password" value="123456" />
+	
+	<test name="I824-1" allow-return-values="true">
+		<parameter name="flowname" value="Flow1" />
+		<parameter name="applicationID" value="722882" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.i824.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+	<!-- <test name="I824-2" allow-return-values="true">
+		<parameter name="flowname" value="Flow2" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.i824.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+	<test name="I824-3" allow-return-values="true">
+		<parameter name="flowname" value="Flow3" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.i824.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+	<test name="I824-4" allow-return-values="true">
+		<parameter name="flowname" value="Flow4" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.i824.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+	<test name="I824-5" allow-return-values="true">
+		<parameter name="flowname" value="Flow5" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.i824.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+	<test name="I824-6" allow-return-values="true">
+		<parameter name="flowname" value="Flow6" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.i824.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+	<test name="I824-7" allow-return-values="true">
+		<parameter name="flowname" value="Flow7" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.i824.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+	<test name="I824-8" allow-return-values="true">
+		<parameter name="flowname" value="Flow8" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.i824.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+	<test name="I824-9" allow-return-values="true">
+		<parameter name="flowname" value="Flow9" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.i824.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+	<test name="I824-10" allow-return-values="true">
+		<parameter name="flowname" value="Flow10" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.i824.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+	<test name="I824-11" allow-return-values="true">
+		<parameter name="flowname" value="Flow11" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.i824.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+	<test name="I824-12" allow-return-values="true">
+		<parameter name="flowname" value="Flow12" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.i824.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+	<test name="I824-13" allow-return-values="true">
+		<parameter name="flowname" value="Flow13" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.i824.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+	<test name="I824-14" allow-return-values="true">
+		<parameter name="flowname" value="Flow14" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.i824.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+	<test name="I824-15" allow-return-values="true">
+		<parameter name="flowname" value="Flow15" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.i824.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+	<test name="I824-16" allow-return-values="true">
+		<parameter name="flowname" value="Flow16" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.i824.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+	<test name="I824-17" allow-return-values="true">
+		<parameter name="flowname" value="Flow17" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.i824.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+	<test name="I824-18" allow-return-values="true">
+		<parameter name="flowname" value="Flow18" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.i824.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+	<test name="I824-19" allow-return-values="true">
+		<parameter name="flowname" value="Flow19" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.i824.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+	<test name="I824-20" allow-return-values="true">
+		<parameter name="flowname" value="Flow20" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.i824.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+	<test name="I824-21" allow-return-values="true">
+		<parameter name="flowname" value="Flow21" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.i824.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+	<test name="I824-22" allow-return-values="true">
+		<parameter name="flowname" value="Flow22" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.i824.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+	<test name="I824-23" allow-return-values="true">
+		<parameter name="flowname" value="Flow23" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.i824.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+	<test name="I824-24" allow-return-values="true">
+		<parameter name="flowname" value="Flow24" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.i824.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+	<test name="I824-25" allow-return-values="true">
+		<parameter name="flowname" value="Flow25" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.i824.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+	<test name="I824-26" allow-return-values="true">
+		<parameter name="flowname" value="Flow26" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.i824.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+	<test name="I824-27" allow-return-values="true">
+		<parameter name="flowname" value="Flow27" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.i824.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+	<test name="I824-28" allow-return-values="true">
+		<parameter name="flowname" value="Flow28" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.i824.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+	<test name="I824-29" allow-return-values="true">
+		<parameter name="flowname" value="Flow29" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.i824.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+	<test name="I824-30" allow-return-values="true">
+		<parameter name="flowname" value="Flow30" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.i824.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+	<test name="I824-31" allow-return-values="true">
+		<parameter name="flowname" value="Flow31" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.i824.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+	<test name="I824-32" allow-return-values="true">
+		<parameter name="flowname" value="Flow32" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.i824.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+	<test name="I824-33" allow-return-values="true">
+		<parameter name="flowname" value="Flow33" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.i824.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+	<test name="I824-34" allow-return-values="true">
+		<parameter name="flowname" value="Flow34" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.i824.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+	<test name="I824-35" allow-return-values="true">
+		<parameter name="flowname" value="Flow35" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.i824.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+	<test name="I824-36" allow-return-values="true">
+		<parameter name="flowname" value="Flow36" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.i824.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+	<test name="I824-37" allow-return-values="true">
+		<parameter name="flowname" value="Flow37" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.i824.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+	<test name="I824-38" allow-return-values="true">
+		<parameter name="flowname" value="Flow38" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.i824.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+	<test name="I824-39" allow-return-values="true">
+		<parameter name="flowname" value="Flow39" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.i824.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+	<test name="I824-40" allow-return-values="true">
+		<parameter name="flowname" value="Flow40" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.i824.SimpleQuestionsTest"></class>
+		</classes>
+	</test> -->
+
+</suite>

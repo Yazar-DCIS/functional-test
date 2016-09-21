@@ -1,6 +1,23 @@
 machine:
   java:
     version: oraclejdk8
+
+dependencies:
+  pre:
+    - ./circle/copy-env-vars-to-gradle-properties
+
 test:
   override:
-    - ./gradlew build -x test
+    - echo "no test to run"
+
+deployment:
+  publish-from-branch:
+    branch: /.*/
+    commands:
+      - cd qa-base; gradle clean publish
+      - gradle clean publish
+  publish-from-tag:
+    tag: /.*/
+    commands:
+      - cd qa-base; gradlew clean publish
+      - gradlew clean publish

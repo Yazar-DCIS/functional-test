@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Clean-Resources" parallel="tests" verbose="1"	thread-count="2">
+
+	<test name="clean-directory-images" allow-return-values="true">
+		<classes>
+			<class name="com.formsdirectinc.qa.utils.CleanFolderContents">
+				<methods>
+				 <parameter name="product" value="n400seqa" />
+				 <parameter name="directory" value="images" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="clean-directory-pdf" allow-return-values="true">
+		<classes>
+			<class name="com.formsdirectinc.qa.utils.CleanFolderContents">
+				<methods>
+				 <parameter name="product" value="i129f" />
+				 <parameter name="directory" value="pdf" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+</suite>
+

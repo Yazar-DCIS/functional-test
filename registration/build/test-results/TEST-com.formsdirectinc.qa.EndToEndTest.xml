@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.formsdirectinc.qa.EndToEndTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2016-09-20T07:27:17" hostname="otywin-17" time="47.352">
+  <properties/>
+  <testcase name="start[0](DUS, https://stage.usimmigration.us/, i90, Flow2, test-20-09@dcis.net, 123456, )" classname="com.formsdirectinc.qa.EndToEndTest" time="47.352">
+    <failure message="java.lang.RuntimeException: java.io.FileNotFoundException: build\resources\test\payment\forminputs.properties (The system cannot find the path specified)" type="java.lang.RuntimeException">java.lang.RuntimeException: java.io.FileNotFoundException: build\resources\test\payment\forminputs.properties (The system cannot find the path specified)
+	at com.formsdirectinc.qa.utils.PropertyResource.loadProperty(PropertyResource.java:31)
+	at com.formsdirectinc.qa.app.payment.PaymentTest.paymenttest(PaymentTest.java:51)
+	at com.formsdirectinc.qa.TestBase.executePaymentTest(TestBase.java:177)
+	at com.formsdirectinc.qa.EndToEndTest.start(EndToEndTest.java:67)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.FileNotFoundException: build\resources\test\payment\forminputs.properties (The system cannot find the path specified)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:138)
+	at com.formsdirectinc.qa.utils.PropertyResource.loadProperty(PropertyResource.java:27)
+	... 23 more
+</failure>
+  </testcase>
+  <system-out><![CDATA[EndToEndTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

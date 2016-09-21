@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="i90-test" parallel="tests"	verbose="1" thread-count="1" preserve-order="true">
+	<parameter name="sitename" value="AIC"/>
+	<parameter name="siteurl" value="https://www.us-immigration.com" />
+	<parameter name="username" value="" />
+	<parameter name="password" value="123456" />
+	<parameter name="product" value="i90" />
+	<parameter name="flowname" value="Flow2" />
+	<parameter name="applicationID" value="" /> 
+	<test name="i90" allow-return-values="true">
+		<classes>
+			<class name="com.formsdirectinc.qa.EndToEndTest"></class>
+		</classes>
+	</test>
+</suite>

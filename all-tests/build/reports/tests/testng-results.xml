@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[<br>EMail ID<br><font color="green">test-20-09.2@dcis.net</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br><b>Executing the test for RegistrationTest for the product i90 and flow name as Flow2 in the site USC<br><b>]]>
+    </line>
+    <line>
+      <![CDATA[<br><b>Executing the test for PaymentTest for the product i90 and flow name as Flow2 in the site USC<br><b>]]>
+    </line>
+  </reporter-output>
+  <suite name="registration-test" duration-ms="62806" started-at="2016-09-20T07:59:11Z" finished-at="2016-09-20T08:00:14Z">
+    <groups>
+    </groups>
+    <test name="i90" duration-ms="62806" started-at="2016-09-20T07:59:11Z" finished-at="2016-09-20T08:00:14Z">
+      <class name="com.formsdirectinc.qa.EndToEndTest">
+        <test-method status="PASS" signature="startTest(java.lang.String)[pri:0, instance:com.formsdirectinc.qa.EndToEndTest@122783cf]" name="startTest" is-config="true" duration-ms="5618" started-at="2016-09-20T13:29:11Z" finished-at="2016-09-20T13:29:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[i90]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="PASS" signature="start(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.formsdirectinc.qa.EndToEndTest@122783cf]" name="start" duration-ms="57161" started-at="2016-09-20T13:29:17Z" finished-at="2016-09-20T13:30:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DUS]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://stage.usimmigration.us/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[i90]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Flow2]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[test-20-09.2@dcis.net]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<br>EMail ID<br><font color="green">test-20-09.2@dcis.net</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br><b>Executing the test for RegistrationTest for the product i90 and flow name as Flow2 in the site USC<br><b>]]>
+            </line>
+            <line>
+              <![CDATA[<br><b>Executing the test for PaymentTest for the product i90 and flow name as Flow2 in the site USC<br><b>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method status="FAIL" signature="endTest(java.lang.String, java.lang.String)[pri:0, instance:com.formsdirectinc.qa.EndToEndTest@122783cf]" name="endTest" is-config="true" duration-ms="0" started-at="2016-09-20T13:30:14Z" finished-at="2016-09-20T13:30:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[i90]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Flow2]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.remote.SessionNotFoundException">
+            <message>
+              <![CDATA[The FirefoxDriver cannot be used after quit() was called.
+Build info: version: '2.47.2', revision: '4d972c01cab1304452627f837654326a11eb92fe', time: '2015-09-24 09:17:17'
+System info: host: 'otywin-17', ip: '10.0.102.178', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_25'
+Driver info: driver.version: FirefoxDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.SessionNotFoundException: The FirefoxDriver cannot be used after quit() was called.
+Build info: version: '2.47.2', revision: '4d972c01cab1304452627f837654326a11eb92fe', time: '2015-09-24 09:17:17'
+System info: host: 'otywin-17', ip: '10.0.102.178', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_25'
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:390)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:568)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
+	at org.openqa.selenium.firefox.FirefoxDriver.getScreenshotAs(FirefoxDriver.java:354)
+	at com.formsdirectinc.qa.utils.CaptureScreen.takeScreenShot(CaptureScreen.java:61)
+	at com.formsdirectinc.qa.TestBase.endTest(TestBase.java:66)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.TestRunner.afterRun(TestRunner.java:1012)
+	at org.testng.TestRunner.run(TestRunner.java:636)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.SessionNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- com.formsdirectinc.qa.EndToEndTest -->
+    </test> <!-- i90 -->
+  </suite> <!-- registration-test -->
+</testng-results>

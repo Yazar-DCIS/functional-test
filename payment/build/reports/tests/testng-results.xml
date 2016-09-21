@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[The user 'orina.moorthy@dcis.net' is valid in 'AIC']]>
+    </line>
+  </reporter-output>
+  <suite name="payment-tests" duration-ms="54279" started-at="2016-09-19T14:06:32Z" finished-at="2016-09-19T14:07:26Z">
+    <groups>
+    </groups>
+    <test name="Payment" duration-ms="54279" started-at="2016-09-19T14:06:32Z" finished-at="2016-09-19T14:07:26Z">
+      <class name="com.formsdirectinc.qa.app.payment.PaymentTest">
+        <test-method status="PASS" signature="startTest(java.lang.String)[pri:0, instance:com.formsdirectinc.qa.app.payment.PaymentTest@6e1a2088]" name="startTest" is-config="true" duration-ms="5137" started-at="2016-09-19T19:36:32Z" finished-at="2016-09-19T19:36:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[i90]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="PASS" signature="paymenttest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.formsdirectinc.qa.app.payment.PaymentTest@6e1a2088]" name="paymenttest" duration-ms="49128" started-at="2016-09-19T19:36:37Z" finished-at="2016-09-19T19:37:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[AIC]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://www.us-immigration.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[i90]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[orina.moorthy@dcis.net]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[The user 'orina.moorthy@dcis.net' is valid in 'AIC']]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- paymenttest -->
+        <test-method status="FAIL" signature="endTest(java.lang.String, java.lang.String)[pri:0, instance:com.formsdirectinc.qa.app.payment.PaymentTest@6e1a2088]" name="endTest" is-config="true" duration-ms="0" started-at="2016-09-19T19:37:26Z" finished-at="2016-09-19T19:37:26Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'flowname' is required by @Configuration on method endTest but has not been marked @Optional or defined
+in C:\git\modular4\functional-test-scripts-coresite\payment\build\resources\test\payment\testsuites\payment.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'flowname' is required by @Configuration on method endTest but has not been marked @Optional or defined
+in C:\git\modular4\functional-test-scripts-coresite\payment\build\resources\test\payment\testsuites\payment.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:84)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:201)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.TestRunner.afterRun(TestRunner.java:1012)
+	at org.testng.TestRunner.run(TestRunner.java:636)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- com.formsdirectinc.qa.app.payment.PaymentTest -->
+    </test> <!-- Payment -->
+  </suite> <!-- payment-tests -->
+</testng-results>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="i131-test" verbose="1" parallel="tests" thread-count="4" preserve-order="true">
+
+	<parameter name="product" value="I131" />
+	<parameter name="username" value="orina.moorthy@dcis.net" />
+	<parameter name="password" value="123456" />
+	<parameter name="sitename" value="AIC"/>
+	<parameter name="siteurl" value="https://www.us-immigration.com" />
+	<test name="I131-1" allow-return-values="true">
+		<parameter name="flowname" value="Flow1" />
+		<parameter name="applicationID" value="722882" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.i131.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+	<!-- <test name="I131-2" allow-return-values="true">
+		<parameter name="flowname" value="Flow2" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.i131.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+	<test name="I131-3" allow-return-values="true">
+		<parameter name="flowname" value="Flow3" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.i131.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+	<test name="I131-4" allow-return-values="true">
+		<parameter name="flowname" value="Flow4" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.i131.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+	<test name="I131-5" allow-return-values="true">
+		<parameter name="flowname" value="Flow5" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.i131.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+	<test name="I131-6" allow-return-values="true">
+		<parameter name="flowname" value="Flow6" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.i131.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+	<test name="I131-7" allow-return-values="true">
+		<parameter name="flowname" value="Flow7" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.i131.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+	<test name="I131-8" allow-return-values="true">
+		<parameter name="flowname" value="Flow8" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.i131.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+	<test name="I131-9" allow-return-values="true">
+		<parameter name="flowname" value="Flow9" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.i131.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+	<test name="I131-10" allow-return-values="true">
+		<parameter name="flowname" value="Flow10" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.i131.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+	<test name="I131-11" allow-return-values="true">
+		<parameter name="flowname" value="Flow11" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.i131.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+	<test name="I131-12" allow-return-values="true">
+		<parameter name="flowname" value="Flow12" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.i131.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+	<test name="I131-13" allow-return-values="true">
+		<parameter name="flowname" value="Flow13" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.i131.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+	<test name="I131-14" allow-return-values="true">
+		<parameter name="flowname" value="Flow14" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.i131.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+	<test name="I131-15" allow-return-values="true">
+		<parameter name="flowname" value="Flow15" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.i131.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+	<test name="I131-16" allow-return-values="true">
+		<parameter name="flowname" value="Flow16" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.i131.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+	<test name="I131-17" allow-return-values="true">
+		<parameter name="flowname" value="Flow17" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.i131.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+	<test name="I131-18" allow-return-values="true">
+		<parameter name="flowname" value="Flow18" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.i131.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+	<test name="I131-19" allow-return-values="true">
+		<parameter name="flowname" value="Flow19" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.i131.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+	<test name="I131-20" allow-return-values="true">
+		<parameter name="flowname" value="Flow20" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.i131.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+	<test name="I131-21" allow-return-values="true">
+		<parameter name="flowname" value="Flow21" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.i131.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+	<test name="I131-22" allow-return-values="true">
+		<parameter name="flowname" value="Flow22" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.i131.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+	<test name="I131-23" allow-return-values="true">
+		<parameter name="flowname" value="Flow23" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.i131.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+ -->
+</suite>

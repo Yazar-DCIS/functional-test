@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="i130i485-test-singleFlow" parallel="tests"	verbose="1" thread-count="5" preserve-order="true">
+<!-- To run the i90 from eq-registration-payment-sq in the same driver -->
+	<parameter name="sitename" value="DUS"/>
+	<parameter name="siteurl" value="https://stage.usimmigration.us/" />
+	<parameter name="username" value="" />
+	<parameter name="password" value="123456" />
+	<parameter name="flowname" value="Flow2" />
+	<parameter name="applicationID" value="" /> 
+	<parameter name="product" value="i130i485qa" />
+	<test name="i130i485" allow-return-values="true">
+		
+		<classes>
+			<class name="com.formsdirectinc.qa.EndToEndTest"></class>
+		</classes>
+	</test> 
+	
+</suite>

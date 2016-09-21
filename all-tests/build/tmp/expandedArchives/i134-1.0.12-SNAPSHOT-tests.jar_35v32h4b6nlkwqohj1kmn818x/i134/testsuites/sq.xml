@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<!-- XML for deciding the flow and scripts to be executed -->
+<!-- Author : Orina -->
+<suite name="i134-test" parallel="tests" verbose="1" thread-count="5" preserve-order="true">
+	
+	<parameter name="sitename" value="AIC"/>
+	<parameter name="siteurl" value="https://www.us-immigration.com" />
+	<parameter name="product" value="I134" />
+	<parameter name="username" value="orina.moorthy@dcis.net" />
+	<parameter name="password" value="123456" />
+	
+	<test name="I134" allow-return-values="true">
+	<parameter name="applicationID" value="722882" />
+	<parameter name="flowname" value="Flow1" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.i134.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+	
+</suite>

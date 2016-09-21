@@ -5,6 +5,7 @@ Thumbs.db
 # IntelliJ
 out/
 .idea/
+*.iml
 *.iws
 .gradle
 .idea/workspace.xml

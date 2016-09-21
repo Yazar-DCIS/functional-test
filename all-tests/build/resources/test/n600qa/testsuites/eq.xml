@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="n600-test" parallel="tests" verbose="1" thread-count="5" preserve-order="true">
+	
+	<parameter name="product" value="N600QA" />
+	<test name="n600_Scenario_user" allow-return-values="true">
+	<parameter name="flowname" value="user" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.n600qa.EligibilityQuestionsTest"></class>
+		</classes>
+	</test>
+</suite>

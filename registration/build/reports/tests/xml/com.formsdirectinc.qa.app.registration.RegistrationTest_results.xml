@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.formsdirectinc.qa.app.registration.RegistrationTest"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="25.752">
+  <properties />
+  
+  
+      <testcase name="registrationtest" time="25.752" />
+  
+</testsuite>

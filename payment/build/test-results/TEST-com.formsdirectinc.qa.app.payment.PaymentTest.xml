@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.formsdirectinc.qa.app.payment.PaymentTest" tests="2" skipped="0" failures="1" errors="0" timestamp="2016-09-19T14:06:37" hostname="otywin-17" time="49.13">
+  <properties/>
+  <testcase name="paymenttest[0](AIC, https://www.us-immigration.com, i90, orina.moorthy@dcis.net, 123456)" classname="com.formsdirectinc.qa.app.payment.PaymentTest" time="49.128"/>
+  <testcase name="endTest" classname="com.formsdirectinc.qa.app.payment.PaymentTest" time="0.0">
+    <failure message="org.testng.TestNGException: &#10;Parameter 'flowname' is required by @Configuration on method endTest but has not been marked @Optional or defined&#10;in C:\git\modular4\functional-test-scripts-coresite\payment\build\resources\test\payment\testsuites\payment.xml" type="org.testng.TestNGException">org.testng.TestNGException: 
+Parameter 'flowname' is required by @Configuration on method endTest but has not been marked @Optional or defined
+in C:\git\modular4\functional-test-scripts-coresite\payment\build\resources\test\payment\testsuites\payment.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:84)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:201)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.TestRunner.afterRun(TestRunner.java:1012)
+	at org.testng.TestRunner.run(TestRunner.java:636)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Sep 19, 2016 7:37:26 PM com.formsdirectinc.qa.app.payment.PaymentTest paymenttest
+INFO: Application.ID= 1073046
+]]></system-err>
+</testsuite>

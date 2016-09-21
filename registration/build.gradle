@@ -1,0 +1,13 @@
+ext.fdQaVersion='1.0.12-SNAPSHOT'
+
+dependencies {
+        testCompile ("com.formsdirectinc.qa:qa-base:$fdQaVersion:tests"){
+         exclude group: "org.testng", module: "testng"
+        }
+        testCompile ("com.formsdirectinc.qa:payment:$fdQaVersion:tests"){
+         exclude group: "org.testng", module: "testng"
+        }
+	 
+}
+
+ 

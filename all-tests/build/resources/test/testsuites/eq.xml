@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="allProducts-test-singleFlow-EQ" parallel="tests"	verbose="1" thread-count="5" preserve-order="true">
+
+	<parameter name="sitename" value="AIC"/>
+	<parameter name="siteurl" value="https://www.us-immigration.com" />
+
+	<test name="I129f" allow-return-values="true">
+		<parameter name="product" value="I129F" />
+		<parameter name="flowname" value="Flow1" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.i129f.EligibilityQuestionsTest"></class>
+		</classes>
+	</test>
+
+
+	<test name="I130" allow-return-values="true">
+		<parameter name="product" value="I130" />
+		<parameter name="flowname" value="Flow1" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.i130.EligibilityQuestionsTest"></class>
+		</classes>
+	</test>
+
+	<test name="I130_I485" allow-return-values="true">
+		<parameter name="product" value="I130I485" />
+		<parameter name="flowname" value="Flow1" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.i130i485.EligibilityQuestionsTest"></class>
+		</classes>
+	</test>
+
+	
+	<test name="I485Single" allow-return-values="true">
+		<parameter name="product" value="I485" />
+		<parameter name="flowname" value="SingleFlow" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.i485.EligibilityQuestionsTest"></class>
+		</classes>
+	</test>
+
+	<test name="I751" allow-return-values="true">
+		<parameter name="product" value="I751" />
+		<parameter name="flowname" value="Flow1" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.i751.EligibilityQuestionsTest"></class>
+		</classes>
+	</test>
+
+	<test name="I765" allow-return-values="true">
+		<parameter name="product" value="I765" />
+		<parameter name="flowname" value="Flow1" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.i765.EligibilityQuestionsTest"></class>
+		</classes>
+	</test>
+
+	<test name="I821" allow-return-values="true">
+		<parameter name="product" value="i821" />
+		<parameter name="flowname" value="Flow1" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.i821.EligibilityQuestionsTest"></class>
+		</classes>
+	</test>
+
+	<test name="I821D" allow-return-values="true">
+		<parameter name="product" value="I821D" />
+		<parameter name="flowname" value="Flow1" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.i821d.EligibilityQuestionsTest"></class>
+		</classes>
+	</test>
+
+
+	<test name="I90" allow-return-values="true">
+		<parameter name="product" value="I90" />
+		<parameter name="flowname" value="Flow1" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.i90.EligibilityQuestionsTest"></class>
+		</classes>
+	</test>
+
+	<test name="N400" allow-return-values="true">
+		<parameter name="product" value="N400" />
+		<parameter name="flowname" value="Flow1" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.n400.EligibilityQuestionsTest"></class>
+		</classes>
+	</test>
+
+	<test name="N600" allow-return-values="true">
+		<parameter name="product" value="N600" />
+		<parameter name="flowname" value="Flow1" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.n600.EligibilityQuestionsTest"></class>
+		</classes>
+	</test> 
+
+
+</suite>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [registration-test]" parallel="tests">
+  <parameter name="password" value="123456"/>
+  <parameter name="product" value="i90"/>
+  <parameter name="siteurl" value="https://stage.usimmigration.us/"/>
+  <parameter name="sitename" value="DUS"/>
+  <parameter name="flowname" value="Flow2"/>
+  <parameter name="applicationID" value=""/>
+  <parameter name="username" value="test-20-09.2@dcis.net"/>
+  <test name="i90">
+    <classes>
+      <class name="com.formsdirectinc.qa.EndToEndTest"/>
+    </classes>
+  </test> <!-- i90 -->
+</suite> <!-- Failed suite [registration-test] -->

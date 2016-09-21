@@ -15,56 +15,58 @@
 <ul>
 In command-line, move to the containing directory(functional-test-scripts-coresites) and execute the script using the commands given below<br /><br/>
 <b>Sample commands to execute scripts</b><br/>
-<li>./gradlew build -Dsite.name=FR (if test not specified then it will be default:EligiblityQuestions,Registration,Payment,SimpleQuestions)</li>
-<li>./gradlew build -Dsite.name=AIC -Dproduct=n400 -Dtest=Registration,Payment,SimpleQuestions</li>
-<li>./gradlew build -Dsite.name=DUS -Dproduct=n400 -Dtest=EligiblityQuestions,Registration,Payment</li>
-<li>./gradlew build -Dsite.name=USC -Dproduct=n400 -Dtest=EligiblityQuestions,Registration,Payment,SimpleQuestions Dflowname=Flow1</li>
-<li>./gradlew build -Dsite.name=USC -Dproduct=n400 -Dtest=Login,Payment,SimpleQuestions Dflowname=Flow1 -Dusername=orina.moorthy@dcis.net -Dpassword=A12345678</li>
+<li>./gradlew build -Dsite.name=FR (if test not specified then it will be default:EligibilityQuestionsTest,RegistrationTest,PaymentTest,SimpleQuestionsTest)</li>
+<li>./gradlew build -Dsite.name=AIC -Dproduct=n400 -Dtest=RegistrationTest,PaymentTest,SimpleQuestionsTest</li>
+<li>./gradlew build -Dsite.name=DUS -Dproduct=n400 -Dtest=EligibilityQuestionsTest,RegistrationTest,PaymentTest</li>
+<li>./gradlew build -Dsite.name=USC -Dproduct=n400 <br>-Dtest=EligibilityQuestionsTest,RegistrationTest,PaymentTest,SimpleQuestionsTest -Dflowname=Flow1</li>
+<li>./gradlew build -Dsite.name=SEQAFRSTAGING -Dproduct=n400se <br>-Dtest=RegistrationTest,PaymentTest,SimpleQuestionsTest -Dflowname=Flow1</li>
+<li>./gradlew build -Dsite.name=ID -Dproduct=n400 -Dtest=LoginTest,PaymentTest,SimpleQuestionsTest <br>-Dflowname=Flow1 -Dusername=orina.moorthy@dcis.net -Dpassword=A12345678</li>
 
 <li>NOTE:
 <ul>
 <li>If <b>-Dtest</b> property should passed in command line with the respective order seperated by comma(,)from which the application will get executed.<br><b>-Dtest</b> argument if not passed application will get executed from EQ up to Print</li>
 <li>If <b>-Dproduct</b> property is not passed in command line all products(18) will get executed</li>
-<li>If <b>Dflowname</b> property is not passed in command line all flows of the product specified will get executed</li>
-<li>The <b>-Dusername</b> property should be passed in command line if the test scenario is <b>Login</b></li>
+<li>If <b>-Dflowname</b> property is not passed in command line all flows of the product specified will get executed</li>
+<li>The <b>-Dusername</b> property should be passed in command line if the test scenario is <b>LoginTest</b></li>
 <li><i>All the arguments passed in command line are case-sensitive, refer the values to be passed below</i></li></ul></li></ul>
 
 <b>Values for Script Execution</b><br/>
 <ul>
 <li>Value given to <b>-Dproduct</b> will be the <b>Application</b> that gets executed<br/></li>
 <ul><i>
-<li>i102 || i129 || i130 || i130i485 || i131 || i134 || i485 || i485multi || i539 || i751 || i765 || i821 || <br>
-i821d || i824 || i90 || n400 || n565 || n600</li></i>
-<li>If -Dproduct=runallwithsingleflow is given all products with single flow will be executed</li>
-<li>If -Dproduct=runallcompleteflow is given all products with all available flows will be executed</li>
+<li>i102 || i129f || i130 || i130i485 || i131 || i134 || i485 || i539 || i751 || i765 || i821 || <br>
+i821d || i824 || i90 || n400 || n565 || n600</li>
+<li>i129fqa || i130qa || i130i485qa || i485qa || i539qa || i821dqa || n600qa</li></i>
+<li>If -Dproduct=allproducts is given, all products with single flow will be executed</li>
+<li>If -Dproduct=comparepdf is given then the pdf of the product given in respective xml will be compared and results will be stored in respective product folder</li>
+<li>If -Dproduct=test is given, the products and flows that are called in test.xml(src/test/resources/testsuites/test.xml)  will be get executed</li>
 </ul>
 
-<li>Value given to <b>-Dsite.name</b> is the respective <b>NAME of URL</b> defined.<br/></li>
-<ul><i>
-<li>AIC</li>
-<li>ID</li>
-<li>DUS</li>
-<li>USC</li>
-<li>FR</li>
-<li>AICSTAGING</li>
-<li>IDSTAGING</li>
-<li>DUSSTAGING</li>
-<li>USCSTAGING</li>
-<li>FRSTAGING</li></i></ul>
+<li>Value given to <b>-Dsite.name</b> is the respective <b>NAME of URL</b> defined<br/></li>
+<ul><i>Can be given in command-line or in the respective xml<br>
+<li>AIC || ID || DUS || USC || FR</li>
+</i></ul>
+
+<li>Value given to <b>-Dsite.url</b> is the respective <b>URL</b> defined<br/></li>
+<ul><i>Can be given in command-line or in the respective xml<br>
+<li>ex-For FR - https://www.fileright.com/ ||  https://stage.fileright.com/</li>
+</i></ul>
 
 <li>Value given to <b>-Dtest</b> will be the <b>tasks</b> for the application</li>
 <ul>
-<li> -Dtest=EligiblityQuestions or <br>-Dtest=com.formsdirectinc.functionaltests.apps.productName.EligiblityQuestions</li>
-<li> -Dtest=Registration or <br>-Dtest=com.formsdirectinc.functionaltests.apps.registration.Registration  <br>(IN CASE OF FileRight-Dtest=com.formsdirectinc.functionaltests.apps.fr.registration.Registration)</li>
-<li> -Dtest=Payment or <br>-Dtest=com.formsdirectinc.functionaltests.apps.payment.Payment  <br>(IN CASE OF FileRight-Dtest=com.formsdirectinc.functionaltests.apps.fr.payment.Payment)</li>
-<li> -Dtest=SimpleQuestions or <br>-Dtest=com.formsdirectinc.functionaltests.apps.productName.SimpleQuestions</li>
-<li> -Dtest=Login or <br>-Dtest=com.formsdirectinc.functionaltests.apps.login.Login<br>For login using registrated username and continue with the application</li>
-<li> <i>Note: Order has be passed in command line;<br>Example if SQ needs to be tested with EQ then the -Dtest will be <br>-Dtest=EligiblityQuestions,Registration,Payment,SimpleQuestions<i><br><br></li>
+<li> -Dtest=EligibilityQuestionsTest </li>
+<li> -Dtest=RegistrationTest</li>
+<li> -Dtest=PaymentTest </li>
+<li> -Dtest=SimpleQuestionsTest </li>
+<li> -Dtest=LoginTest <br>For LoginTest using registered user-name and continue with the application</li>
+<li> <i>Note: Order has be passed in command line;<br>Example if SQ needs to be tested with EQ then the -Dtest will be <br>-Dtest=EligibilityQuestionsTest,RegistrationTest,PaymentTest,SimpleQuestionsTest<i><br><br></li>
 </ul>
-<li>Value given to <b>flowname</b> will be the <b>Scenario</b> for the application</li>
-<ul><i>
-<li>N600<br>
-user || biofather || biomother || national || adopfather || adopmother || parent ||bio_parents||adop_parents</li></ul> </ul>
+<ul>
+<li>Value given to <b>flowname</b> will be the respective scenarios named(drafted in productname/src/test/resources/productname/flows.xls) for the product</li>
+<li>To run only the EQ of a product then <b>-Dsuite.name=eq</b> will be the respective xml named(drafted in productname/src/test/resources/productname/testsuites/eq.xml) for the product</li>
+<li>To run only the SQ of a product then <b>-Dsuite.name=sq</b> will be the respective xml named(drafted in productname/src/test/resources/productname/testsuites/sq.xml) for the product</li>
+<li>To run a product entire from EQ to Print then <b>-Dsuite.name=productname</b> will be the respective xml named(drafted in productname/src/test/resources/productname/testsuites/productname.xml) for the product</li>
+</ul>
 
 <b>Output Folder</b><br/>
 <ul>

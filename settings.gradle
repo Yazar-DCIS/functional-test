@@ -1,2 +1,6 @@
-
 rootProject.name ='funtional-test-scripts-coresites' 
+include ':qa-base',':registration',  ':payment', 
+		':n400',':i90', ':i102', ':i129f', ':i129fqa', ':i130', ':i130qa', ':i130i485', ':i130i485qa', ':i131',
+		':i134', ':i485qa', ':i485', ':i539',':i539qa', ':i751', ':i765', ':i821',
+		':i821d',':i821dqa', ':i824', ':n400se', ':n565', ':n600', ':n600qa'
+

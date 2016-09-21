@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [payment-tests]" parallel="tests">
+  <parameter name="password" value="123456"/>
+  <parameter name="product" value="i90"/>
+  <parameter name="siteurl" value="https://www.us-immigration.com"/>
+  <parameter name="sitename" value="AIC"/>
+  <parameter name="username" value="orina.moorthy@dcis.net"/>
+  <test name="Payment">
+    <parameter name="product" value="i90"/>
+    <classes>
+      <class name="com.formsdirectinc.qa.app.payment.PaymentTest"/>
+    </classes>
+  </test> <!-- Payment -->
+  <test name="Payment(failed)" parallel="tests">
+    <parameter name="product" value="i90"/>
+    <classes>
+      <class name="com.formsdirectinc.qa.app.payment.PaymentTest">
+        <methods>
+          <include name="paymenttest" invocation-numbers="0"/>
+          <include name="startTest"/>
+        </methods>
+      </class> <!-- com.formsdirectinc.qa.app.payment.PaymentTest -->
+    </classes>
+  </test> <!-- Payment(failed) -->
+</suite> <!-- Failed suite [payment-tests] -->

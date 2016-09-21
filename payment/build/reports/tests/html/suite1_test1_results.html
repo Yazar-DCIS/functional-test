@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
+<head>
+  <title>Test Results Report - Payment</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="reportng.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="reportng.js"></script>
+</head>
+<body>
+<h1>Payment</h1>
+<p>
+  Test duration: 54.265s
+</p>
+
+  <table class="resultsTable configTable">
+    <tr><th colspan="3" class="header failedConfig">Failed Configuration</th></tr>
+              <tr class="group">
+        <td colspan="3">com.formsdirectinc.qa.app.payment.PaymentTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+          endTest
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+        
+    
+        
+
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.testng.TestNGException: <br/>
+Parameter &apos;flowname&apos; is required by @Configuration on method endTest but has not been marked @Optional or defined<br/>
+in C:\git\modular4\functional-test-scripts-coresite\payment\build\resources\test\payment\testsuites\payment.xml</b></a><br />
+    <div class="stackTrace" id="exception-0">
+              org.testng.internal.Parameters.createParameters(Parameters.java:154)<br />
+              org.testng.internal.Parameters.createParameters(Parameters.java:361)<br />
+              org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:84)<br />
+              org.testng.internal.Invoker.invokeConfigurations(Invoker.java:201)<br />
+              org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)<br />
+              org.testng.TestRunner.afterRun(TestRunner.java:1012)<br />
+              org.testng.TestRunner.run(TestRunner.java:636)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:366)<br />
+              org.testng.SuiteRunner.access$000(SuiteRunner.java:39)<br />
+              org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)<br />
+              org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)<br />
+              java.util.concurrent.FutureTask.run(FutureTask.java:266)<br />
+              java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)<br />
+              java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)<br />
+              java.lang.Thread.run(Thread.java:745)<br />
+                </div>
+      </td>
+</tr>
+    
+      </table>
+
+
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">com.formsdirectinc.qa.app.payment.PaymentTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+          paymenttest
+      </td>
+  <td class="duration">
+    49.128s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"AIC", "https://www.us-immigration.com", "i90", "orina.moorthy@dcis.net", "123456"</span><br />
+    
+            <div class="testOutput">
+                        The user &apos;orina.moorthy@dcis.net&apos; is valid in &apos;AIC&apos;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+      </table>
+  
+</body>
+</html>

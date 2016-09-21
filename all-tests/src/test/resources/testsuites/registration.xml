@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="registration-test" parallel="tests"	verbose="1" thread-count="5" preserve-order="true">
+	
+	<parameter name="product" value="i90" />
+	<parameter name="sitename" value="AIC"/>
+	<parameter name="siteurl" value="https://www.us-immigration.com" />
+	<test name="Registration-withUserEmailID" allow-return-values="true">
+		<parameter name="flowname" value="" />
+		<parameter name="username" value="orinz@dcis.net" /> <!-- to create your own email-id -->
+		<parameter name="password" value="123456" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.registration.RegistrationTest"></class>
+		</classes>
+	</test> 
+	
+	<test name="Registration-withRandomEmailID" allow-return-values="true">
+		<parameter name="flowname" value="Test" />
+		<parameter name="username" value="" /> <!-- to generate random email-id -->
+		<parameter name="password" value="123456" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.registration.RegistrationTest"></class>
+		</classes>
+	</test> 		
+</suite>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.formsdirectinc.qa.app.payment.PaymentTest"
+           tests="2"
+           failures="1"
+           errors="0"
+           skipped="0"
+           time="49.128">
+  <properties />
+      <testcase name="endTest" time="0.000">
+            <failure type="org.testng.TestNGException"
+                  message="
+Parameter &apos;flowname&apos; is required by @Configuration on method endTest but has not been marked @Optional or defined
+in C:\git\modular4\functional-test-scripts-coresite\payment\build\resources\test\payment\testsuites\payment.xml"
+              >
+<![CDATA[org.testng.TestNGException: 
+Parameter 'flowname' is required by @Configuration on method endTest but has not been marked @Optional or defined
+in C:\git\modular4\functional-test-scripts-coresite\payment\build\resources\test\payment\testsuites\payment.xml
+  org.testng.internal.Parameters.createParameters(Parameters.java:154)
+  org.testng.internal.Parameters.createParameters(Parameters.java:361)
+  org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:84)
+  org.testng.internal.Invoker.invokeConfigurations(Invoker.java:201)
+  org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+  org.testng.TestRunner.afterRun(TestRunner.java:1012)
+  org.testng.TestRunner.run(TestRunner.java:636)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+  org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+  org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+  java.util.concurrent.FutureTask.run(FutureTask.java:266)
+  java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+  java.lang.Thread.run(Thread.java:745)
+]]>
+      </failure>
+
+          </testcase>
+  
+  
+      <testcase name="paymenttest" time="49.128" />
+  
+</testsuite>

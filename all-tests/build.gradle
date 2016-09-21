@@ -1,0 +1,194 @@
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+    jcenter()
+    maven{
+        url "http://download.java.net/maven/2"
+    }
+    maven{
+        url "http://repository.dcis.net/repository/releases/"
+        credentials {
+            username mavenUser
+            password mavenPassword
+        }
+    }
+    maven{
+        url "http://repository.dcis.net/repository/snapshots/"
+        credentials {
+            username mavenUser
+            password mavenPassword
+        }
+    }
+}
+
+ext.fdQaVersion='1.0.12-SNAPSHOT'
+
+dependencies {
+		testCompile ("com.formsdirectinc.qa:qa-base:$fdQaVersion:tests"){
+		 exclude group: "org.testng", module: "testng"
+		}
+		testCompile ("com.formsdirectinc.qa:payment:$fdQaVersion:tests"){
+		 exclude group: "org.testng", module: "testng"
+		}
+		testCompile ("com.formsdirectinc.qa:registration:$fdQaVersion:tests")
+		{
+		 exclude group: "org.testng", module: "testng"
+		}
+		testCompile ("com.formsdirectinc.qa:i102:$fdQaVersion:tests"){
+		 exclude group: "org.testng", module: "testng"
+		}
+		testCompile ("com.formsdirectinc.qa:i129f:$fdQaVersion:tests"){
+		 exclude group: "org.testng", module: "testng"
+		}
+		testCompile ("com.formsdirectinc.qa:i129fqa:$fdQaVersion:tests"){
+		 exclude group: "org.testng", module: "testng"
+		}
+		testCompile ("com.formsdirectinc.qa:i130:$fdQaVersion:tests"){
+		 exclude group: "org.testng", module: "testng"
+		}
+		testCompile ("com.formsdirectinc.qa:i130i485:$fdQaVersion:tests"){
+		 exclude group: "org.testng", module: "testng"
+		}
+		testCompile ("com.formsdirectinc.qa:i130i485qa:$fdQaVersion:tests"){
+		 exclude group: "org.testng", module: "testng"
+		}
+		testCompile ("com.formsdirectinc.qa:i130qa:$fdQaVersion:tests"){
+		 exclude group: "org.testng", module: "testng"
+		}
+		testCompile ("com.formsdirectinc.qa:i131:$fdQaVersion:tests"){
+		 exclude group: "org.testng", module: "testng"
+		}
+		testCompile ("com.formsdirectinc.qa:i134:$fdQaVersion:tests"){
+		 exclude group: "org.testng", module: "testng"
+		}
+		testCompile ("com.formsdirectinc.qa:i134qa:$fdQaVersion:tests"){
+		 exclude group: "org.testng", module: "testng"
+		}
+		testCompile ("com.formsdirectinc.qa:i485:$fdQaVersion:tests"){
+		 exclude group: "org.testng", module: "testng"
+		}
+		testCompile ("com.formsdirectinc.qa:i485qa:$fdQaVersion:tests"){
+		 exclude group: "org.testng", module: "testng"
+		}
+		testCompile ("com.formsdirectinc.qa:i539:$fdQaVersion:tests"){
+		 exclude group: "org.testng", module: "testng"
+		}
+		testCompile ("com.formsdirectinc.qa:i539qa:$fdQaVersion:tests"){
+		 exclude group: "org.testng", module: "testng"
+		}
+		testCompile ("com.formsdirectinc.qa:i751:$fdQaVersion:tests"){
+		 exclude group: "org.testng", module: "testng"
+		}
+		testCompile ("com.formsdirectinc.qa:i765:$fdQaVersion:tests"){
+		 exclude group: "org.testng", module: "testng"
+		}
+		testCompile ("com.formsdirectinc.qa:i821:$fdQaVersion:tests"){
+		 exclude group: "org.testng", module: "testng"
+		}
+		testCompile ("com.formsdirectinc.qa:i821d:$fdQaVersion:tests"){
+		 exclude group: "org.testng", module: "testng"
+		}
+		testCompile ("com.formsdirectinc.qa:i821dqa:$fdQaVersion:tests"){
+		 exclude group: "org.testng", module: "testng"
+		}
+		testCompile ("com.formsdirectinc.qa:i821qa:$fdQaVersion:tests"){
+		 exclude group: "org.testng", module: "testng"
+		}
+		testCompile ("com.formsdirectinc.qa:i824:$fdQaVersion:tests"){
+		 exclude group: "org.testng", module: "testng"
+		}
+		testCompile ("com.formsdirectinc.qa:i90:$fdQaVersion:tests"){
+		 exclude group: "org.testng", module: "testng"
+		}
+		testCompile ("com.formsdirectinc.qa:n400:$fdQaVersion:tests"){
+		 exclude group: "org.testng", module: "testng"
+		}
+		testCompile ("com.formsdirectinc.qa:n400se:$fdQaVersion:tests"){
+		 exclude group: "org.testng", module: "testng"
+		}
+		testCompile ("com.formsdirectinc.qa:n565:$fdQaVersion:tests"){
+		 exclude group: "org.testng", module: "testng"
+		}
+		testCompile ("com.formsdirectinc.qa:n600:$fdQaVersion:tests"){
+		 exclude group: "org.testng", module: "testng"
+		}
+		testCompile ("com.formsdirectinc.qa:n600qa:$fdQaVersion:tests"){
+		 exclude group: "org.testng", module: "testng"
+		}
+	
+		compile group: 'org.seleniumhq.selenium', name: 'selenium-firefox-driver', version: '2.45.0'
+        compile group: 'org.seleniumhq.selenium', name: 'selenium-api', version: '2.45.0'
+        compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '2.45.0'
+        compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.3.2'
+        compile group: 'org.apache.poi', name:'poi', version:'3.11'
+        compile group: 'com.google.inject', name:'guice', version:'3.0'
+        compile 'log4j:log4j:1.2.17'
+        compile 'com.itextpdf:itextpdf:5.1.0'
+        compile 'ru.yandex.qatools.ashot:ashot:1.5.2'
+        compile 'junit:junit:4.+'
+        compile 'org.apache.pdfbox:pdfbox:2.0.0'
+        compile 'org.apache.pdfbox:pdfbox-tools:2.0.0-RC1'
+        compile 'com.google.zxing:core:3.2.1'
+        compile 'com.google.zxing:javase:3.2.1'
+        compile("org.uncommons:reportng:1.1.1") {
+            exclude group: "org.testng", module: "testng"
+        }
+
+        compile 'org.testng:testng:6.9.10'
+}
+
+ test{
+        systemProperties = System.getProperties()
+        systemProperties['jna.nosys'] = true
+        systemProperties['jna.boot.library.path'] = null
+
+        useTestNG()
+                {
+                	
+                    options.suites("build/resources/test/testsuites/${System.getProperty('suite.name')}.xml")
+                    
+                    // To generate the TestNG customized reports,instead of default html-report
+                    useDefaultListeners=true
+                    reports.html.enabled = false
+                    options.listeners << 'org.uncommons.reportng.HTMLReporter'
+                    options.listeners << 'org.uncommons.reportng.JUnitXMLReporter'
+                }
+    }
+
+
+task unzipClasses(type: Copy){
+    from {
+        configurations.testCompile.resolvedConfiguration.resolvedArtifacts.findAll{it.classifier == "tests"}.collect {zipTree(it.file)}
+    }
+	exclude '**/*.properties'
+	exclude '**/*.xml'
+	exclude '**/*.xls'
+    into file("build/classes/test")
+
+}
+
+task unzipResources(type: Copy){
+	from {
+		configurations.testCompile.resolvedConfiguration.resolvedArtifacts.findAll{it.classifier == "tests"}.collect {zipTree(it.file)}
+	}
+	include '**/*.properties'
+	include '**/*.xml'
+	include '**/*.xls'
+	into file("build/resources/test")
+
+}
+
+testClasses.dependsOn unzipClasses
+testClasses.dependsOn unzipResources
+
+task printDeps {
+    doLast {
+        println "Dependencies:"
+        configurations.testCompile.each { println it }
+    }
+}
+

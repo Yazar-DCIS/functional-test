@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="allProducts-randomtest" parallel="tests"	verbose="1" thread-count="5" preserve-order="true">
+
+	<parameter name="sitename" value="DUS"/>
+	<parameter name="siteurl" value="https://www.usimmigration.us/" />
+	<parameter name="password" value="123456" />
+	<parameter name="flowname" value="Flow2" />
+	
+	
+	<test name="n400" allow-return-values="true">
+		<parameter name="applicationID" value="" /> 
+		<parameter name="username" value="" />
+		<parameter name="product" value="n400" />
+		<classes>
+			<class name="com.formsdirectinc.qa.EndToEndTest"></class>
+		</classes>
+	</test> 
+	<test name="i90" allow-return-values="true">
+		<parameter name="applicationID" value="705981" /> 
+		<parameter name="username" value="" />
+		<parameter name="product" value="i90" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.i90.SimpleQuestionsTest"></class>
+		</classes>
+	</test>
+</suite>
